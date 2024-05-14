@@ -1,0 +1,109 @@
+@charset "utf-8";
+body,html{ margin:0; padding:0; overflow-x:hidden;}
+ul{ margin:0; padding:0; list-style:none;}
+.clear{margin:0px; padding:0px; width:0px; height:0px; line-height:0px; font-size:0px; clear:both;}
+.blank7{margin:0px; padding:0px; width:0px; height:7px; line-height:0px; font-size:0px; clear:both;}
+.line_dotted{ width:98%; height:0; line-height:0; font-size:0; padding:5px 0 0; margin:0 auto 5px; border-bottom:1px dotted #ccc; clear:both;}
+
+/*布局*/
+.contentWrapper{ width:1000px; margin:0 auto 10px; padding:0;}
+.contentLeft{ width:650px; margin:0; padding:0; float:left; background:#fff;}
+.contentRight{ width:310px; padding:9px; padding-bottom:0; float:right; background:#f0f0f0; overflow: hidden;}
+.contentColumnLeft{ width:100%; overflow:hidden; margin:10px 0;}
+.contentadBox_left{font-size:0; width:650px; text-align:center;}
+.contentColumnRight,.contentadBox_right{ border:1px solid #ccc; margin-bottom:10px; background:#fff;}
+.contentColumnRight{ width:308px;}
+/* 20171124 mail from pengbo
+.contentadBox_right{ width:300px;padding:4px;} */
+.contentadBox_right{ width:300px; padding:0; border:none;}
+
+.contentBoxLeft{ width:628px; padding:10px; border:1px solid #ccc; background:#fff;}
+.contentBoxRight{ width:300px; margin:0 auto; padding:10px 0 5px;}
+.contentTitBarLeft,.contentTitBarRight{padding:0 5px; height:30px; line-height:30px; color:#000; font-size:14px; font-weight:bold;}
+.contentTitBarLeft{ border-top:3px solid #222;}
+.contentTitBarRight{ border-bottom:1px solid #222;}
+
+.contentPicTxt{ padding:5px 0;}
+.contentPicArea{ text-align:center; }
+.contentPicArea img{margin:5px 5px 0 0;}
+.contentColumnRight .contentPicBox{ width:150px; text-align:center;float:left;}
+#searchBar{ padding-bottom:2px;}
+/*文章组件*/
+#contentBreadcrumbs{ width:100%; padding:3px 0; background:#fff; border-bottom:1px solid #000;}
+#articlePreTitle{ width:100%; margin:0; font-size:14px;}
+#articleTitle{width:94%;margin:0 auto;padding:20px 0 10px;_padding:0;font-size:24px;line-height:1.5em;font-weight:bold;color:black;clear:both;text-align:center; font-weight:normal; font-family:\5B8B\4F53;}
+#articleSubtitle{ width:100%; margin:0; text-align:right;font-size:14px;}
+#contentMsg{margin:5px 0;width:100%;height:25px; font-size:12px;line-height:25px;border-bottom:1px dotted #ccc;text-align:center; color:#666;}
+#contentMsg a{color:#666;}
+#author{}
+#linkgmw{}
+#pubTime{}
+#source{}
+#contentBreadcrumbs2{ width:100%; height:50px; padding:3px 0; background:#fff; border-bottom:1px solid #000; line-height:45px;}
+#contentBreadcrumbs2 a,#contentBreadcrumbs2 font{ color:#333; line-height:55px; display:block; float:left;}
+#ArticleChannelID{ margin-bottom:-14px; margin-top:4px; margin-right:10px; *margin-bottom:0; *margin-top:0; _margin-bottom:0; _margin-top:4px;}
+/*上一篇下一篇*/
+.contentmoreReading {overflow:hidden;zoom:1;font-size:14px;}
+.contentmoreReading #FounderPrevious {color:#bb2737;}
+.contentmoreReading #FounderNext {color:#bb2737;}
+/*显示评论数*/
+.all-number-comment { margin-left:10px;}
+.all-number-comment a{ margin-right:10px;}
+a.cmtNumBox{display: inline-block;height: 23px;font-size: 12px;color: #666;}
+a.cmtNumBox:hover {color:#c00;}
+b#cmtNum{ font-weight:normal;}
+.icon-pencil{display: inline-block; width:16px; height:16px;background:url(../images/pencil-16.png) no-repeat left 0; margin-bottom:-2px;}
+
+#contentShare{ width:600px; margin:0 auto;text-align:right;}
+#contentMain{ width:98%; margin:0;padding:0 10px 10px;font-size:16px;line-height:180%;text-align:left;word-wrap:break-word;word-break:break-all;clear:both;overflow:hidden;}
+#contentMain p{margin:12px 0; font-family:"微软雅黑";}
+#contentMain p font{}
+#contentMain p a{color:#00F; text-decoration:underline;}
+#contentMain span a{color:#00F; text-decoration:underline;}
+#contentMain img{max-width:640px; height:auto !important; vertical-align:top;}
+
+.contentRelatedArea{ position:relative;}
+#contentRelatedLinks{width:280px; padding-right:20px; float:left;}
+#contentRelatedLinks ul{}
+#contentRelatedLinks ul li{list-style-type:disc; list-style-position:inside;height:2em; overflow:hidden;}
+#contentLiability{width:600px;margin:0 auto;text-align:right; color:#000; font-size:14px;}
+#copyrightClarify{ width:650px;}
+#flv_play{width:600px; height:450px; position:relative;}
+#v_button{ width:24px; height:80px; background:#797979; font-size:12px; color:#fff; text-align:center; line-height:20px; cursor:pointer; margin-left:600px; position:absolute;}
+#v_content{ width:150px; height:450px; background:#797979; text-align:center; padding:0 5px; margin-left:600px; position:absolute; display:none;}
+#v_content p a{ font-size:12px; line-height:16px; color:#fff; text-decoration:none;}
+#v_content p a:hover{ text-decoration:underline;}
+#v_close,#v_more a{ width:auto; float:right; height:auto; font-size:12px; color:#fff; cursor:pointer;}
+#v_close{ margin-bottom:4px;}
+#video{ width:640px; margin:0 auto;}
+/* 相关评论*/
+#commentLogin{ padding-top:10px;}
+/*视频播放器*/
+.gmwvideo{ width:640px; margin:0 auto; position:relative; z-index:100;}
+
+/*文章页响应式*/
+/*  20170923 取消响应式
+@media only screen and (max-width: 600px) {
+	.contentRight,.contentRight *,#channelHead,.navBg,.banner1000{display: none!important;}
+	.all-number-comment{display: none;}
+	.contentWrapper,.contentLeft { width:100%!important;}
+	.contentLeft img { max-width:100%!important; height:auto!important;}
+	#contentMain{ width:94%; padding:0 3%;}
+	#contentMain *{ max-width:100%;}
+	#contentRelatedLinks{ display:block; width:94%; padding:0 3%;}
+	#contentBreadcrumbs,#contentBreadcrumbs2{ width:96%;padding:3px 2%;}
+	.contentColumnLeft{width:94%; padding:0 3%;}
+	.comment-area{display:block; width:100%; padding:0;}
+	.contentmoreReading {padding: 0 3%;}
+	.contentmoreReading #FounderPrevious {position:relative;display:inline-block;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;width:80%;height:28px;top:9px;}
+	.contentmoreReading #FounderNext {position:relative;display:inline-block;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;width:80%;height:28px;top:9px;}
+}
+*/
+/*video
+@media only screen and (min-width: 481px) and (max-width:600px){
+.gmwvideo *{max-width:480px;min-width:480px; width:480px; height:401px; margin:0 auto;}
+}
+@media only screen and (max-width: 480px) {
+.gmwvideo *{max-width:320px;min-width:320px;width:320px;height:281px; margin:0 auto;}
+}
+*/
